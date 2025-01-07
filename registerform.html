@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="registerform.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="left-column-container">
+
+            <div class="header-logo">
+                <img src="MD-logos_white.png" alt="">
+            </div>
+
+            <div class="content-area-of-header">
+
+                <div class="heading-area">
+                    <h1>Welcome Friend</h1>
+                    <p>To Keep connected with us please<br>login with your personal info.</p>
+                </div>
+
+                <div class="sign-up-button">
+                    <button>SIGN IN</button>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="form-container">
+
+            <h1>Create Account</h1>
+
+            <div class="social-icons">
+
+            <i class="fa-brands fa-facebook-f fa-lg"style="color: #000000;"></i>
+            <i class="fa-brands fa-twitter fa-lg"style="color: #000000;"></i>
+            <i class="fa-brands fa-instagram fa-lg" style="color: #000000;"></i>
+
+            </div>
+
+            <p style="margin-top: 50px;">Or use your email for registration</p>
+
+            <div class="form-starts">
+
+            <label for="username"></label><br>
+            <i class="fa fa-user icon"></i>
+            <input type="text" id="uname" placeholder="Username"><br>
+            <span id="errormsg_uname"></span><br>
+
+            <label for="password"></label><br>
+            <i class="fa-solid fa-lock"></i>
+            <input type="text" id="pname" placeholder="Password" onkeyup="passwordValidation()"><br>
+            <span id="errormsg_pname"></span><br>
+
+            <div class="alignment">
+                <p id="capital" ><i class="fas fa-check-circle fa-lg"  style="position:relative;"></i>Atleast 1 Upper Case letter</p>
+                <p id="lower"><i class="fas fa-check-circle fa-lg"  style="position:relative;"></i>Atleast 1 Lower Case letter</p><br>
+                <p id="digit"><i class="fas fa-check-circle fa-lg"  style="position:relative;"></i>Atleast 1 Digit</p>
+                <p id="special"><i class="fas fa-check-circle fa-lg"  style="position:relative;"></i>Atleast 1 Special Character</p>
+                <p id="nos" ><i class="fas fa-check-circle fa-lg" style="position:relative;"></i>Must be 8-20 digit</p>
+            </div>
+
+
+            <label for="fname"></label><br>
+            <i class="fa fa-user icon"></i>
+            <input type="text" id="fname" placeholder="First Name"><br>
+            <span id="errormsg_fname"></span><br>
+
+            <label for="lname"></label><br>
+            <i class="fa fa-user icon"></i>
+            <input type="text" id="lname" placeholder="Last Name"><br>
+            <span id="errormsg_lname"></span><br>
+
+
+            <label for="pnumber"></label><br>
+            <i class="fa-solid fa-phone"></i>
+            <input type="number" id="pnum" placeholder="Phone Number"><br>
+            <span id="errormsg_mobile"></span><br>
+
+
+            <label for="email"></label><br>
+            <i class="fa-solid fa-envelope"></i>
+            <input type="email" id="email" placeholder="Email"><br>
+            <span id="errormsg_email"></span><br>
+
+
+            <label for="address"></label><br>
+            <i class="fas fa-address-card"></i>
+            <input type="text" id="address" placeholder="Address"><br>
+            <span id="errormsg_address"></span><br>
+
+
+            <label for="text"></label><br>
+            <i class="fa-solid fa-venus-mars"></i>
+            <input type="text" id="gender" placeholder="Gender"><br>
+            <span id="errormsg_gender"></span><br>
+
+
+            <label for="dob"></label><br>
+            <i class="fas fa-calendar-alt"></i>
+            <input type="number" id="dob1" placeholder="Birth Year"><br>
+            <span id="errormsg_dobyear"></span><br>
+
+
+            <label for="dob"></label><br>
+            <i class="fa-solid fa-champagne-glasses"></i>
+            <input type="number" id="dob2" placeholder="Birth Month"><br>
+            <span id="errormsg_dobmonth"></span><br>
+
+
+            <label for="dob"></label><br>
+            <i class="fa-solid fa-calendar-check"></i>
+            <input type="number" id="dob3" placeholder="Birth Date"><br>
+            <span id="errormsg_dobdate"></span><br>
+
+
+            <input type="checkbox" id="check">
+            <label for="tnc" id="check">Terms & condition</label><br>
+            <span id="errormsg_check"></span><br>
+
+            <button class="button" onclick='completeFunctionCall()'>SIGN UP</button> 
+
+            </div>
+
+        </div>
+        
+    </div>
+
+    <script src="validation.js"></script>
+
+</body>
+</html>
